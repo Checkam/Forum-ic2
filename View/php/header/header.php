@@ -16,7 +16,7 @@
                 <div class="fas fa-power-off"></div>
             </button>
         </form>
-        <a class="btn btn-outline-light mx-1" href="https://www.forum-ic2.ovh/?profil=<?phpecho $_SESSION['id_user'];?>">
+        <a class="btn btn-outline-light mx-1" href="<?php echo $path['index'];?>/?profil=<?php echo $_SESSION['id_user'];?>">
             <div class="fas fa-user"></div>
         </a>
     </div>
@@ -27,14 +27,14 @@
         <button class="btn btn-outline-light mr-1" id="inscri_btn">S'inscrire</button>
         <button class="btn btn-outline-light" id="connect_btn">Connexion</button>
     </div>
-    <?php 	   
+    <?php
         }
     ?>
     <div class="">
         <a class="btn btn-outline-light" href="<?php echo $_SERVER['HTTP_REFERER']; ?>">
             <div class="fas fa-arrow-left"></div>
         </a>
-        <a class="btn btn-outline-light" href="https://www.forum-ic2.ovh">
+        <a class="btn btn-outline-light" href="<?php echo $path['index'];?>">
             <div class="fas fa-home"></div>
         </a>
     </div>

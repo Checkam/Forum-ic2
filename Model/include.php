@@ -8,6 +8,7 @@ $path_img="img/";
 $php="php/";
 $css="css/";
 
+$path['index']='https://forum-ic2.000webhostapp.com';
 
 //Controller
 $path['theme_c']=$path_controller.$php."theme.php";

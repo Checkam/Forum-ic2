@@ -1,4 +1,4 @@
-<a class="d-flex justify-content-between py-3 px-3 sous_theme_th1" href="http://www.forum-ic2.ovh/?theme=<?echo $sous_theme['id_theme'];?>">
+<a class="d-flex justify-content-between py-3 px-3 sous_theme_th1" href="<?php echo $path['index'];?>/?theme=<?php echo $sous_theme['id_theme'];?>">
   <div class="">
       <div><?php  echo $sous_theme['titre_theme'] ?></div>
       <div style="font-size:0.8em"><?php  echo $sous_theme['description'] ?></div>

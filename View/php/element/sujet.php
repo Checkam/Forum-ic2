@@ -1,4 +1,4 @@
-<a class="col-lg-12 p-3"  href="https://www.forum-ic2.ovh/?sujet=<?php echo $element['id_sujet'];?>&page=1">
+<a class="col-lg-12 p-3"  href="<?php echo $path['index'];?>?sujet=<?php echo $element['id_sujet'];?>&page=1">
 	<div class="d-flex justify-content-between align-items-center theme_th1 py-3 px-1">
 		<div class="row col-12 justify-content-space-arround align-items-center">
 			<img src="https://medias.pourlascience.fr/api/v1/images/view/5a82b0e38fe56f225465fb67/wide_1300/image.jpg" class="rond mr-1">
@@ -7,7 +7,7 @@
 					<?php echo $element['titre_sujet'];?>
 				</div>
 				<div>
-					<?php 
+					<?php
 						date_texte($element['date_post']);
 					?>
 				</div>

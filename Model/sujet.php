@@ -1,7 +1,7 @@
 <?php
     require($path['connexion_bdd']);
-    $theme = $_GET['theme'];
-    setcookie("theme",$theme,time()+3600);
+    $theme = htmlspecialchars($_GET['theme']);
+    //setcookie("theme",$theme,time()+3600);
 	$sujets = $bdd->prepare("SELECT * FROM RA_DESPRES_sujet WHERE id_theme=? ORDER BY date_post DESC");
 	$sujets->execute(array($theme));
 

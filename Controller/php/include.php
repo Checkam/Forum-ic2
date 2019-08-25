@@ -34,6 +34,8 @@ $path['add_sujet_m']=$path_model."add_sujet.php";
 $path['add_message_m']=$path_model."add_message.php";
 $path['profil_m']=$path_model."profil.php";
 
+$path['index']='https://forum-ic2.000webhostapp.com';
+
 //View
 
 $path['style']=$path_view.$css."style.css";

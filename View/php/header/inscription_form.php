@@ -2,7 +2,7 @@
     <div class="container d-flex justify-content-center h-100 align-items-center">
         <div id="block_form" class="col-lg-4 col-sm-6 p-4 block_form">
             <div class="text-center mb-4 h5"><strong>Inscription</strong></div>
-            <form class="" method="post" action="<?echo $path['inscription_c'];?>">
+            <form class="" method="post" action="<?php echo $path['inscription_c'];?>">
                 <div class="form-group">
                     <input class="form-control my-2" id="pseudo_i" type="text" placeholder="Pseudo" name="pseudo" value="<?php if(isset($_COOKIE['pseudo'])){echo $_COOKIE['pseudo'];} ?>">
                     <input class="form-control my-2" id="mdp_i" type="password" placeholder="Mot de passe" name="mdp">
@@ -13,7 +13,7 @@
                 </div>
                 <button class="btn btn-outline-light col" type="submit" name="inscription">S'inscrire</button>
             </form>
-            <?php 
+            <?php
                 if(isset($_COOKIE['erreur'])){
                     echo "<div>".$_COOKIE['erreur']."</div>";
                 }
