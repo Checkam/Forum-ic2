@@ -1,0 +1,153 @@
+/* Autre */
+
+.header_conn_insc {
+    width: 100%;
+    height: 100%;
+    display: none !important;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 6;
+    top: 0;
+    left: 0;
+}
+
+.block_form {
+    background: #232020;
+    color: white;
+    border-radius: 10%;
+    z-index: 7;
+}
+
+.popup {
+    background: #232020;
+    color: white;
+    z-index: 7;
+    top: -30%;
+}
+
+@media (min-width: 600px) {
+    .rond {
+        overflow: hidden;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        width: 60px;
+        height: 60px;
+    }
+    .img_profil_2 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .rond {
+        display: none;
+    }
+    .img_profil_1 {
+        display: none;
+    }
+    .img_profil_2>img {
+        overflow: hidden;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+}
+
+
+/* Theme 1*/
+
+body {
+    background: #18191d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_th1 {
+    background: #5c5757;
+    color: white;
+}
+
+.general_th1 {
+    display: flex;
+    flex-direction: column;
+    background: #efecec;
+}
+
+.theme_th1 {
+    background: #232020;
+    color: white;
+}
+
+.theme2_th1 {
+    background: #353535;
+    color: white;
+}
+
+.sous_theme_th1 {
+    background: #121317;
+    color: white;
+}
+
+.sous_theme_th1:hover {
+    background: #121207;
+}
+
+.bouton_section img {
+    filter: invert(1);
+}
+
+.bouton_section:hover {
+    filter: invert(100);
+}
+
+.footer_th1 {
+    background: #5c5757;
+    color: white;
+}
+
+.profil_th1 {
+    background: #232020;
+    color: white;
+}
+
+.profil_th1:hover {
+    background: #5c5757;
+    cursor: pointer;
+}
+
+.sous_profil_th1 {
+    background-color: #d0d0d0;
+}
+
+.info_profil_th1 {
+    background-color: #bfbfbf;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #EEE;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.word {
+    word-wrap: break-word
+}

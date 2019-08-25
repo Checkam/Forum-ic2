@@ -1,0 +1,9 @@
+<?
+require($path['connexion_bdd']);
+include($path['sous_theme_m']);
+while($sous_theme=$sous_themes->fetch()){
+  $nb_sujet=get_nb_sujet($bdd,$sous_theme);
+  include($path['sous_theme_v']);
+}
+unset($bdd);
+?>
