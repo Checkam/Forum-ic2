@@ -16,19 +16,19 @@
 					</div>
 					<div class="d-flex flex-column">
 						<div class="h3">
-							<?php
+							<?php 
 								echo $auteur['pseudo'];
 							?>
 						</div>
 						<div>
-							<?
+							<?php 
 								echo $privilege['privilege'];
 							?>
 						</div>
 					</div>
 				</div>
 				<div class="info_profil_th1 pl-3 py-2 mt-1">
-					<?php
+					<?php 
 						if(isset($_SESSION['id_user']) && $id_user == $_SESSION['id_user']){
 							echo $auteur['mail'];
 						}
@@ -40,7 +40,7 @@
 						<div class="text-center mr-4">
 							<div>Nombre de Messages</div>
 							<div>
-								<?
+								<?php 
 									echo $nombre_msg;
 								?>
 							</div>
@@ -48,7 +48,7 @@
 						<div class="text-center">
 							<div>Nombre de Sujets</div>
 							<div>
-								<?
+								<?php 
 									echo $nombre_sujet;
 								?>
 							</div>
@@ -58,7 +58,7 @@
 			</div>
 		</div>
 		<div id="msg_profil" style='display:none'>
-			<?php
+			<?php 
 				if($msg->rowCount()){
 					//$couleur = "color: white";
 					while($element = $msg->fetch()){
@@ -70,7 +70,7 @@
 			?>
 		</div>
 		<div id="sujet_profil" style='display:none'>
-			<?php
+			<?php 
 				if($sujet->rowCount()){
 					while($element = $sujet->fetch()){
 						$nb_reponse = nb_msg_by_theme_profil($bdd, $element);

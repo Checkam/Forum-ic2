@@ -1,4 +1,4 @@
-<?  
+<?php  
     session_start();
     require($racine.$path['connexion_bdd']);
     $add_message = $bdd->prepare("INSERT INTO RA_DESPRES_message(texte,id_auteur,id_sujet) VALUE(?,?,?)");

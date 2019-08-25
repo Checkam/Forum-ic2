@@ -1,4 +1,4 @@
-<?
+<?php
     if(isset($_GET['page'])){
         require($path['connexion_bdd']);
         require($path['message_m']);

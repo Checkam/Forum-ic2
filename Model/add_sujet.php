@@ -1,4 +1,4 @@
-<?  
+<?php  
     session_start();
     require($racine.$path['connexion_bdd']);
     $add_sujet = $bdd->prepare("INSERT INTO RA_DESPRES_sujet(titre_sujet,texte,id_auteur,id_theme) VALUE(?,?,?,?)");

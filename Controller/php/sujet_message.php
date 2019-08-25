@@ -1,4 +1,4 @@
-<?
+<?php
 require($path['connexion_bdd']);
 $element = get_sujet(htmlspecialchars($_GET['sujet']),$bdd);
 

@@ -1,4 +1,4 @@
-<?
+<?php
 require($path['connexion_bdd']);
 include($path['sous_theme_m']);
 while($sous_theme=$sous_themes->fetch()){

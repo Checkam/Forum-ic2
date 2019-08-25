@@ -1,4 +1,4 @@
-<?
+<?php
 	session_start();
 	require("Model/include.php");
 	$theme = 0;
@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<link rel="stylesheet" href="<?echo $path['style'].'?v='.filemtime($path['style']); ?>">
+	<link rel="stylesheet" href="<?php echo $path['style'].'?v='.filemtime($path['style']); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
@@ -43,12 +43,12 @@
 		</div>
 		<?php include($path['footer']); ?>
 	</div>
-	<script type="text/javascript" src="<?echo $path_controller.'js/script_index.js?v='.filemtime($path_controller.'js/script_index.js'); ?>"></script>
-	<script type="text/javascript" src="<?echo $path_controller;?>js/change_theme.js?v=<?echo filemtime($path_controller.'js/change_theme.js'); ?>"></script>
-	<script type="text/javascript" src="<?echo $path_controller;?>js/header.js?v=<?echo filemtime($path_controller.'js/header.js'); ?>"></script>
-	<script type="text/javascript" src="<?echo $path_controller;?>js/verif_form.js?v=<?echo filemtime($path_controller.'js/verif_form.js'); ?>"></script>
-	<script type="text/javascript" src="<?echo $path_controller;?>js/sujet.js?v=<?echo filemtime($path_controller.'js/sujet.js'); ?>"></script>
-	<script type="text/javascript" src="<?echo $path_controller;?>js/profil.js?v=<?echo filemtime($path_controller.'js/profil.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo $path_controller.'js/script_index.js?v='.filemtime($path_controller.'js/script_index.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo $path_controller;?>js/change_theme.js?v=<?php echo filemtime($path_controller.'js/change_theme.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo $path_controller;?>js/header.js?v=<?php echo filemtime($path_controller.'js/header.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo $path_controller;?>js/verif_form.js?v=<?php echo filemtime($path_controller.'js/verif_form.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo $path_controller;?>js/sujet.js?v=<?php echo filemtime($path_controller.'js/sujet.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo $path_controller;?>js/profil.js?v=<?php echo filemtime($path_controller.'js/profil.js'); ?>"></script>
 </body>
 
 </html>
