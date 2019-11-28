@@ -18,3 +18,8 @@ Notre but est de créer un forum pour l’IC2 mais qui reste accessible à toute
 ### Base de Donnée
 
 ![Config Bdd](img/bdd.png?raw=true "Configuration de la base de donnée")
+
+
+### Démo 
+
+ ![Demo](img/demo.png?raw=true "Demo du forum")
